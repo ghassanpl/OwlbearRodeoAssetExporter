@@ -154,9 +154,6 @@
     <ClCompile Include="mmap.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="TurboBase64.lib" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="mmap.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
@@ -165,6 +162,11 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="External\Turbo-Base64\vs\vs2017\TurboBase64.vcxproj">
+      <Project>{a162f37f-183f-4250-88ab-9b9fbde30b04}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

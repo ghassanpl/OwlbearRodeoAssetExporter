@@ -23,9 +23,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="TurboBase64.lib" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="mmap.h">
       <Filter>Source Files</Filter>
     </ClInclude>
