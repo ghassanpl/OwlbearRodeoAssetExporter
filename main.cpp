@@ -63,7 +63,7 @@ int main(int argc, const char** argv)
 				map_name_to_image_id[map["name"]] = map["file"];
 			}
 			else {
-				cout << "NOTE: map " << string{ map["name"] } << " does not have a file associated with it\n";
+				cout << "NOTE: map " << string{ map["name"] } << " does not have an asset associated with it\n";
 			}
 		}
 
