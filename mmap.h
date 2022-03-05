@@ -8,7 +8,6 @@
 #include <string>
 #include <system_error>
 #include <cstdint>
-#include <span>
 #include <filesystem>
 
 namespace ghassanpl

@@ -20,3 +20,4 @@ These are **possible** changes one could make to make this tool better:
 - choosing what to export (which assets) via flags and filters
 - better error handling
   - some maps can have names that cannot be represented in the filesystem
+- support non-Windows OSes (only mmap.cpp is windows-specific)
