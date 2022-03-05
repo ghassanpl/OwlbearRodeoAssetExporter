@@ -54,11 +54,17 @@ int main(int argc, const char** argv)
 		map<string, string> map_name_to_image_id;
 		for (auto& map : *map_array)
 		{
-			auto name = string{ map["name"] } + ".json";
-			ofstream output{ output_directory / name };
-			output << map.dump(2);
+			if (!map["file"].is_null())
+			{
+				auto name = string{ map["name"] } + ".json";
+				ofstream output{ output_directory / name };
+				output << map.dump(2);
 
-			map_name_to_image_id[map["name"]] = map["file"];
+				map_name_to_image_id[map["name"]] = map["file"];
+			}
+			else {
+				cout << "NOTE: map " << string{ map["name"] } << " does not have a file associated with it\n";
+			}
 		}
 
 		for (auto& [name, file_id] : map_name_to_image_id)
