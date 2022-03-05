@@ -147,14 +147,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\ghassanpl\header_utils\mmap.cpp" />
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\ghassanpl\header_utils\mmap.h" />
+    <ClCompile Include="mmap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="TurboBase64.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mmap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
